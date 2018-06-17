@@ -49,13 +49,12 @@ public class Funcoes {
                 System.out.println("\nquantidade em estoque: "+quantidade[local][i]);
             }
         }else{
-            System.out.println("Não existe esse nome");
+            System.out.println("Não existe esse nome ou não foi cadastrado");
         }
     }
     
     public void mostrar(){  
        //mostrar matriz por matriz
-        
         for (int i = 0; i < modelo.length ; i++) {
             if(modelo[i] != null){
                 System.out.println("----------------------------------------------");
@@ -67,7 +66,7 @@ public class Funcoes {
                 if(nomePeca[i][j] != null){
                     System.out.print("Peça: "+nomePeca[i][j]+"  ");
                     System.out.println(" ");
-                    System.out.print("preço: "+preco[i][j]);     
+                    System.out.print("preço: "+preco[i][j]+" R$");     
                     System.out.println(" ");
                     System.out.print("Quantidade: "+quantidade[i][j]);
                     System.out.println(" ");
